@@ -9,9 +9,9 @@ i = list(range(100))[1::2]
 print(i)
 
 
-i = float (input('Введите число X: '))
+i = float(input('Введите число X: '))
 if i % 2 == 0:
-    print ("Четное".format(i))
+    print("Четное".format(i))
 else:
     print('Нечетное'.format(i))
 
@@ -25,12 +25,12 @@ for i in range(1, n + 1):
     print('*' * i)
 
 n = 6
-for i in range( 1, n + 1 ):
-    for j in range( 1, i + 1 ):
-        print( i, end = "" )
+for i in range(1, n + 1):
+    for j in range(1, i + 1):
+        print(i, end="")
     print()
 
-print(sum(map(int,input().split())))
+print(sum(map(int, input().split())))
 
 
 def summa(a):
@@ -44,7 +44,8 @@ def summa(a):
 s = 0
 while 1:
     a = input()
-    if a == '_': break
+    if a == '_':
+        break
     s += summa(a)
     print('Summa:', s)
 
